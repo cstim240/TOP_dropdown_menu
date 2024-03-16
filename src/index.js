@@ -1,18 +1,5 @@
-(function(){
-    addEventListenerToBtn();
-})();
-
-function addEventListenerToBtn(){
-    const mainBtn = document.getElementById("mainBtn");
-    mainBtn.addEventListener("click", ()=>{
-        showMenu();
-    });
-
-    mainBtn.addEventListener("hover", ()=>{
-        showMenu();
-    });
-}
-
-function showMenu(){
-    //implement
-}
+//create click event for button and display menu
+const dropDownButton = document.getElementById("mainBtn");
+dropDownButton.addEventListener("click", function displayDropDownMenu(){
+    document.querySelector(".drop_menu").classList.toggle("visible");
+});
