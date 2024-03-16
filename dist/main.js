@@ -1,0 +1,1 @@
+(()=>{const e=document.getElementById("mainBtn");e.addEventListener("click",(function(){document.querySelector(".drop_menu").classList.toggle("visible")})),window.addEventListener("click",(function(t){t.target!==e&&this.document.querySelector(".drop_menu").classList.remove("visible")}))})();
