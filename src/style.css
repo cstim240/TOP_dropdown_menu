@@ -1,8 +1,6 @@
 #dropDown_Div {
-    position: inline;
+    position: relative;
     display: inline-block;
-    width: 50%;
-
 }
 
 #mainBtn {
@@ -11,6 +9,7 @@
     padding: 10px;
     font-size: large;
     cursor: pointer;
+    width: 115%;
 }
 
 #mainBtn:hover {
@@ -19,8 +18,27 @@
 
 .drop_menu {
     display: none;
+    width: 100%;
     position: absolute;
     background-color: antiquewhite;
-    min-width: 100px;
+    padding: 10px;
+    display: block;
+    z-index: 1;
+    box-shadow: 0px 5px 16px black;
 }
 
+.drop_menu a {
+    font-size:large;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.drop_menu a:hover{
+    background-color:chocolate;
+}
+
+.visible {
+    display:block;
+}
