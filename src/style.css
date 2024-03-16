@@ -1,7 +1,10 @@
 #dropDown_Div {
-    display: flex;
-    
+    position: inline;
+    display: inline-block;
+    width: 50%;
+
 }
+
 #mainBtn {
     background-color: antiquewhite;
     border-radius: 5px;
@@ -10,6 +13,14 @@
     cursor: pointer;
 }
 
-.drop_menu {
-
+#mainBtn:hover {
+    background-color: bisque;
 }
+
+.drop_menu {
+    display: none;
+    position: absolute;
+    background-color: antiquewhite;
+    min-width: 100px;
+}
+
